@@ -3,6 +3,10 @@ import {studentModel} from '../models/student.js';
 
 const app = express();
 
+app.get('/', async (req, res) => {    
+        res.send('hello world');
+});
+
 app.get('/student', async (req, res) => {
 
     try {
